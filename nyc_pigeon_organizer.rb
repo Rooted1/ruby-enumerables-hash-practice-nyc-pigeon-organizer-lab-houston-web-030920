@@ -23,8 +23,9 @@ def nyc_pigeon_organizer(data)
           pigeon_list[name] = pigeon_name_hash(data)
         end
         pigeon_list[name][:color] << color.to_s
+        pigeon_list[name][:gender] << g.to_s
       end
-      binding.pry
+      # binding.pry
     end
   end
   
@@ -34,6 +35,6 @@ def nyc_pigeon_organizer(data)
   # end
   
   
-  # binding.pry
+  binding.pry
   pigeon_list
 end
