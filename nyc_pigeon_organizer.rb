@@ -1,14 +1,16 @@
 require "pry"
 
+
 def pigeon_name_hash (list)
   inner_hash = Hash.new 
-  
   hash_names = list.keys
   hash_names.each do |key|
     inner_hash[key] = []
   end 
   inner_hash
 end
+
+#-------------------------------------------
 
 def nyc_pigeon_organizer(data)
   pigeon_list = Hash.new
