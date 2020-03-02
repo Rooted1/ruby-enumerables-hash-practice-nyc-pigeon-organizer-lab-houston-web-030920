@@ -38,8 +38,5 @@ def nyc_pigeon_organizer(data)
       pigeon_list[name][:lives] << live.to_s
     end
   end
-  
-  
-  binding.pry
   pigeon_list
 end
