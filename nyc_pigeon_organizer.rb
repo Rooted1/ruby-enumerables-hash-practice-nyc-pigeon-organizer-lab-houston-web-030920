@@ -17,9 +17,9 @@ def nyc_pigeon_organizer(data)
     v.map do |name|
       if !pigeon_list.include? name
         pigeon_list[name] = pigeon_name_hash(data)
-        
       end
       pigeon_list[name][:color] << color.to_s
+      pigeon_list[name][:gender] << gender.to_s
     end
     
   end
