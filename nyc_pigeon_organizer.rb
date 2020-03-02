@@ -30,6 +30,12 @@ def nyc_pigeon_organizer(data)
     end
   end
   
+  data[:lives].each do |l, lv|
+    lv.map do |name|
+      pigeon_list[name][:lives] << l.to_s
+    end
+  end
+  
   
   binding.pry
   pigeon_list
