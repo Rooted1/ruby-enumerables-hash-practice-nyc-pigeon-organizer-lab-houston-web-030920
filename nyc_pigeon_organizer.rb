@@ -16,20 +16,24 @@ def nyc_pigeon_organizer(data)
   pigeon_list = Hash.new
 
   data[:color].each do |color, v|
-    v.map do |name|
-      if !pigeon_list.include? name
-        pigeon_list[name] = pigeon_name_hash(data)
+    data[:gender].each do |g, gv|
+      
+      v.map do |name|
+        if !pigeon_list.include? name
+          pigeon_list[name] = pigeon_name_hash(data)
+        end
+        pigeon_list[name][:color] << color.to_s
       end
-      pigeon_list[name][:color] << color.to_s
+      binding.pry
     end
   end
   
-  data[:gender].each do |g, gv|
-      # pigeon_list[g][:gender] << g.to_s
-      binding.pry
-  end
+  # data[:gender].each do |g, gv|
+  #     # pigeon_list[g][:gender] << g.to_s
+  #     binding.pry
+  # end
   
   
-  binding.pry
+  # binding.pry
   pigeon_list
 end
