@@ -24,9 +24,13 @@ def nyc_pigeon_organizer(data)
     end
   end
   
+  data[:gender].each do |g, gv|
+    data[:lives].each do |l, lv|
+      binding.pry
+    end
+  end
   
   
-  
-  binding.pry
+  # binding.pry
   pigeon_list
 end
