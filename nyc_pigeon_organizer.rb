@@ -29,10 +29,10 @@ def nyc_pigeon_organizer(data)
     end
   end
   
-  # data[:gender].each do |g, gv|
-  #     # pigeon_list[g][:gender] << g.to_s
-  #     binding.pry
-  # end
+  data[:gender].each do |g, gv|
+      # pigeon_list[g][:gender] << g.to_s
+      binding.pry
+  end
   
   
   binding.pry
