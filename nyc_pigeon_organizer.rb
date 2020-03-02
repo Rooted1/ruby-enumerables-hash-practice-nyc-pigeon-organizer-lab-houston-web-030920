@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
   
   data[:gender].each do |g, gv|
     gv.map do |name|
-  #     pigeon_list[name][:gender] << g.to_s
+      pigeon_list[name][:gender] << g.to_s
     end
   end
   
