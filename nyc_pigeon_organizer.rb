@@ -17,12 +17,12 @@ def nyc_pigeon_organizer(data)
     v.map do |name|
       if !pigeon_list.include? name
         pigeon_list[name] = pigeon_name_hash(data)
-        binding.pry
+        
       end
       pigeon_list[name][:color] << color.to_s
     end
     
   end
-  
+  binding.pry
   pigeon_list
 end
