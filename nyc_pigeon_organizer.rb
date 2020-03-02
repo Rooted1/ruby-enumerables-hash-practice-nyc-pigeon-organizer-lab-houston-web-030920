@@ -1,6 +1,6 @@
 require "pry"
 
-
+#create an inner hash that takes color, gender, lives as keys and an array as value
 def pigeon_name_hash (list)
   inner_hash = Hash.new 
   hash_names = list.keys
